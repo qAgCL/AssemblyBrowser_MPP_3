@@ -1,0 +1,10 @@
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\TestConsoleApp.exe.config
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\TestConsoleApp.exe
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\TestConsoleApp.pdb
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\obj\Debug\TestConsoleApp.csprojAssemblyReference.cache
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\obj\Debug\TestConsoleApp.csproj.CoreCompileInputs.cache
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\obj\Debug\TestConsoleApp.exe
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\obj\Debug\TestConsoleApp.pdb
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\AssemblyInfoLib.dll
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\AssemblyInfoLib.pdb
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\obj\Debug\TestConsoleApp.csproj.CopyComplete
