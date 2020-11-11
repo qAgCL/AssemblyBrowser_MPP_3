@@ -20,6 +20,7 @@ namespace AssemblyInfoLib
                 if (!type.GetTypeInfo().IsDefined(typeof(CompilerGeneratedAttribute), true))
                 {
                     string NameSpace = type.Namespace;
+          
                     if (!InfoAssembly.NamespacesInfo.ContainsKey(NameSpace))
                     {
                         InfoAssembly.NamespacesInfo.Add(NameSpace, new NamespaceInformation(NameSpace));

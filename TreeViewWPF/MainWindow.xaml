@@ -1,0 +1,66 @@
+﻿<Window x:Class="TreeViewWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TreeViewWPF"
+        xmlns:AssInf ="clr-namespace:AssemblyInfoLib;assembly=AssemblyInfoLib"
+        xmlns:ref="clr-namespace:System.Reflection;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="646.5" Width="798.5">
+    <Window.Resources>
+        <local:GetFieldName x:Key="GetFieldName" />
+        <local:GetMethodName x:Key="GetMethodName" />
+        <local:GetPropertyName x:Key="GetPropertyName" />
+        <local:GetTypeName x:Key="GetTypeName" />
+    </Window.Resources>
+    <Grid>
+        <TreeView Margin="186,40,162,144" BorderThickness="0">
+            <TreeViewItem ItemsSource="{Binding AssemblyInformation.NamespacesInfo.Values}" >
+                <TreeViewItem.Header>
+                    <TextBlock Text="{Binding AssemblyInformation.AssemblyName, StringFormat=Assembly: {0}}"/>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType ="{x:Type AssInf:NamespaceInformation}" ItemsSource="{Binding TypesInfo}">
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding  StringFormat="Namespace: {0} [{1}]">
+                                <Binding Path="NamespaceName"/>
+                                <Binding Path="TypesInfo.Count"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </HierarchicalDataTemplate>
+                <DataTemplate DataType="{x:Type AssInf:TypeInformation}">
+                    <TreeViewItem Header="{Binding TypeName, Converter={StaticResource GetTypeName}}">
+                        <TreeViewItem ItemsSource="{Binding FieldsInfo}">
+                            <TreeViewItem.Header>
+                                <TextBlock Text="{Binding FieldsInfo.Count,StringFormat=Fields[{0}]}"/>
+                            </TreeViewItem.Header>
+                        </TreeViewItem>
+                        <TreeViewItem ItemsSource="{Binding PropertiesInfo}">
+                            <TreeViewItem.Header>
+                                <TextBlock Text="{Binding PropertiesInfo.Count,StringFormat=Properties[{0}]}"/>
+                            </TreeViewItem.Header>
+                        </TreeViewItem>
+                        <TreeViewItem ItemsSource="{Binding MethodsInfo}">
+                            <TreeViewItem.Header>
+                                <TextBlock Text="{Binding MethodsInfo.Count,StringFormat=Methods[{0}]}"/>
+                            </TreeViewItem.Header>
+                        </TreeViewItem>
+                    </TreeViewItem>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type ref:PropertyInfo}">
+                    <TextBlock Text="{Binding Converter={StaticResource GetPropertyName}}"/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type ref:FieldInfo}">
+                    <TextBlock Text="{Binding Converter={StaticResource GetFieldName}}"/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type ref:MethodInfo}">
+                    <TextBlock Text="{Binding Converter={StaticResource GetMethodName}}"/>
+                </DataTemplate>
+            </TreeView.Resources>
+        </TreeView>
+    </Grid>
+</Window>

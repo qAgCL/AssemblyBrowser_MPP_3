@@ -54,6 +54,10 @@
       <Project>{a0eb826c-ce51-4c58-9d2d-6e7c10c392ce}</Project>
       <Name>AssemblyInfoLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TreeViewWPF\TreeViewWPF.csproj">
+      <Project>{f7c4d6da-fac4-42e4-a9ec-4024476a2d2c}</Project>
+      <Name>TreeViewWPF</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

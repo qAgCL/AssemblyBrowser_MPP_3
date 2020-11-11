@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyInfoLib", "AssemblyInfoLib\AssemblyInfoLib.csproj", "{A0EB826C-CE51-4C58-9D2D-6E7C10C392CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewWPF", "TreeViewWPF\TreeViewWPF.csproj", "{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A0EB826C-CE51-4C58-9D2D-6E7C10C392CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0EB826C-CE51-4C58-9D2D-6E7C10C392CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0EB826C-CE51-4C58-9D2D-6E7C10C392CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

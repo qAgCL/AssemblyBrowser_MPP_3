@@ -13,26 +13,11 @@ namespace TestConsoleApp
         int j;
         static void Main(string[] args)
         {
-            
-
-            AssemblyBrowser assemblyBrowser = new AssemblyBrowser();
-            AssemblyInformation test = assemblyBrowser.GetAssemblyInformation(Assembly.GetExecutingAssembly());
-
-            foreach(KeyValuePair<string, NamespaceInformation> keyValue in test.NamespacesInfo)
-            {
-                Console.WriteLine(keyValue.Key);
-                foreach (TypeInformation type in keyValue.Value.TypesInfo)
-                {
-                    Console.WriteLine(type.TypeName);
-                    foreach (FieldInfo field in type.FieldsInfo)
-                    {
-                        Console.WriteLine(field.Name);
-                    }
-                }
-            }
-            Console.ReadLine();
+            Dictionary<int,List<int>> test = new Dictionary<int,List<int>>(); 
         }
+    
     }
+
 
     class testThis
     {

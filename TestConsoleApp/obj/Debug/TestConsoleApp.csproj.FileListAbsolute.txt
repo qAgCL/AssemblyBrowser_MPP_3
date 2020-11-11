@@ -8,3 +8,6 @@ D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\obj\Debug\Test
 D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\AssemblyInfoLib.dll
 D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\AssemblyInfoLib.pdb
 D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\obj\Debug\TestConsoleApp.csproj.CopyComplete
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\TreeViewWPF.exe
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\TreeViewWPF.pdb
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\TestConsoleApp\bin\Debug\TreeViewWPF.exe.config
