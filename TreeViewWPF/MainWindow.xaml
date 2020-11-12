@@ -18,7 +18,14 @@
         <TreeView Margin="186,40,162,144" BorderThickness="0">
             <TreeViewItem ItemsSource="{Binding AssemblyInformation.NamespacesInfo.Values}" >
                 <TreeViewItem.Header>
-                    <TextBlock Text="{Binding AssemblyInformation.AssemblyName, StringFormat=Assembly: {0}}"/>
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding  StringFormat="Assembly: {0} [{1}]">
+                                <Binding Path="AssemblyInformation.AssemblyName"/>
+                                <Binding Path="AssemblyInformation.NamespacesInfo.Count"/>
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
                 </TreeViewItem.Header>
             </TreeViewItem>
             <TreeView.Resources>

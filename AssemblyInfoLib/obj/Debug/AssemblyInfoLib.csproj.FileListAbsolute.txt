@@ -3,3 +3,4 @@ D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\AssemblyInfoLib\bin\Debug\Ass
 D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\AssemblyInfoLib\obj\Debug\AssemblyInfoLib.csproj.CoreCompileInputs.cache
 D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\AssemblyInfoLib\obj\Debug\AssemblyInfoLib.dll
 D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\AssemblyInfoLib\obj\Debug\AssemblyInfoLib.pdb
+D:\5 сем\СПП\AssemblyBrowser\AssemblyBrowser\AssemblyInfoLib\obj\Debug\AssemblyInfoLib.csprojAssemblyReference.cache

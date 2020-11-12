@@ -8,6 +8,7 @@ using System.Windows.Data;
 using System.Reflection;
 namespace TreeViewWPF
 {
+  
     class InfoType
     {
         public static string GetTypeName(Type type)
@@ -114,7 +115,7 @@ namespace TreeViewWPF
             ParameterInfo[] Parametrs = methodInfo.GetParameters();
             foreach (ParameterInfo argument in Parametrs)
                 {
-                    MethodInfoName += InfoType.GetTypeName(argument.GetType())+' '+argument.Name+ ',';
+                    MethodInfoName += InfoType.GetTypeName(argument.ParameterType)+' '+argument.Name+ ',';
                 }
             if (Parametrs.Count() > 0) {
                 MethodInfoName = MethodInfoName.Remove(MethodInfoName.Length - 1);
@@ -156,4 +157,5 @@ namespace TreeViewWPF
         }
     }
 }
+
 

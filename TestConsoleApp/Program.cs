@@ -13,7 +13,8 @@ namespace TestConsoleApp
         int j;
         static void Main(string[] args)
         {
-            Dictionary<int,List<int>> test = new Dictionary<int,List<int>>(); 
+            AssemblyBrowser assemblyBrowser = new AssemblyBrowser();
+            AssemblyInformation AssemblyInformation = assemblyBrowser.GetAssemblyInformation(Assembly.GetExecutingAssembly());
         }
     
     }
