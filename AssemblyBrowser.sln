@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyInfoLib", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewWPF", "TreeViewWPF\TreeViewWPF.csproj", "{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyBrowserTests", "AssemblyBrowserTests\AssemblyBrowserTests.csproj", "{7D779D8B-3255-4409-B85C-1BFD817E6460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7C4D6DA-FAC4-42E4-A9EC-4024476A2D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D779D8B-3255-4409-B85C-1BFD817E6460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D779D8B-3255-4409-B85C-1BFD817E6460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D779D8B-3255-4409-B85C-1BFD817E6460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D779D8B-3255-4409-B85C-1BFD817E6460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -38,7 +38,7 @@ namespace TreeViewWPF
         {
             PropertyInfo propertyInfo = (PropertyInfo)value;
             string PropertyInfoName= null;
-            PropertyInfoName += InfoType.GetTypeName(propertyInfo.GetType())+" "+propertyInfo.Name;
+            PropertyInfoName += InfoType.GetTypeName(propertyInfo.PropertyType)+" "+propertyInfo.Name;
             return PropertyInfoName;
         }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -98,6 +98,7 @@ namespace TreeViewWPF
             {
                 MethodInfoName += "private ";
             }
+            
             if (methodInfo.IsStatic)
             {
                 MethodInfoName += "static ";
