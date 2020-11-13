@@ -7,15 +7,28 @@
         xmlns:AssInf ="clr-namespace:AssemblyInfoLib;assembly=AssemblyInfoLib"
         xmlns:ref="clr-namespace:System.Reflection;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="MainWindow" Height="646.5" Width="798.5">
+        Title="MainWindow" Height="724.5" Width="1128.5">
     <Window.Resources>
         <local:GetFieldName x:Key="GetFieldName" />
         <local:GetMethodName x:Key="GetMethodName" />
         <local:GetPropertyName x:Key="GetPropertyName" />
         <local:GetTypeName x:Key="GetTypeName" />
     </Window.Resources>
-    <Grid>
-        <TreeView Margin="186,40,162,144" BorderThickness="0">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,0,26">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.068"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Button MinHeight="35" Margin="374,554,405,46" Content="Load File" Command="{Binding LoadAssebmly}" Background="#FF39D121" Grid.ColumnSpan="2"/>
+        <TreeView Margin="34,24,39,140" BorderThickness="0" Background="#FF9E84E2" FontSize="20" Grid.ColumnSpan="2">
             <TreeViewItem ItemsSource="{Binding AssemblyInformation.NamespacesInfo.Values}" >
                 <TreeViewItem.Header>
                     <TextBlock>

@@ -26,9 +26,8 @@ namespace TreeViewWPF
         {
             InitializeComponent();
 
-            AssemblyBrowser assemblyBrowser = new AssemblyBrowser();
             this.DataContext = new ViewModel();
-            //this.DataContext = assemblyBrowser.GetAssemblyInformation(Assembly.GetExecutingAssembly());
+
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Reflection;
 using AssemblyInfoLib;
+using System.Windows.Input;
 
 namespace TreeViewWPF
 {
@@ -13,6 +14,8 @@ namespace TreeViewWPF
     {
 
         private AssemblyInformation assemblyInformation = null;
+        private IDialogService GetFileDialog;
+        public ICommand LoadAssebmly { get { return new RelayCommand(obj => GetAsm()); }}
 
         public AssemblyInformation AssemblyInformation
         {
@@ -24,10 +27,19 @@ namespace TreeViewWPF
             }
         }
 
+        private void GetAsm()
+        {
+            if (GetFileDialog.OpenFileDialog())
+            {
+                AssemblyBrowser assemblyBrowser = new AssemblyBrowser();
+                Assembly assembly = Assembly.LoadFrom(GetFileDialog.FilePath);
+                AssemblyInformation = assemblyBrowser.GetAssemblyInformation(assembly);
+            }
+        }
+
         public ViewModel()
         {
-            AssemblyBrowser assemblyBrowser = new AssemblyBrowser();
-            AssemblyInformation = assemblyBrowser.GetAssemblyInformation(Assembly.GetExecutingAssembly());
+            GetFileDialog = new DefaultDialogService();
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
